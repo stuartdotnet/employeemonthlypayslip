@@ -1,7 +1,9 @@
-﻿namespace EmployeeMonthlyPayslip
+﻿using EmployeeMonthlyPayslip.Models;
+
+namespace EmployeeMonthlyPayslip
 {
-    public interface IPayslipGenerator
+    public interface IPayslipGenerator<T> where T : ITaxCode
     {
-        MonthlyPayslip GenerateMonthlyPayslip(string name, decimal annualSalary);
+        MonthlyPayslip<T> GenerateMonthlyPayslip(string name, decimal annualSalary);
     }
 }
