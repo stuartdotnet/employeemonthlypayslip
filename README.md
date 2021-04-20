@@ -1,5 +1,11 @@
 # employeemonthlypayslip
 
+## Introduction
+
+Small project I did for an coding challenge for a finance company
+
+## Running the application
+
 In a console window navigate to the EmployeeMonthlyPayslip\EmployeeMonthlyPayslip folder where the .csproj file is.
 
 Enter the following command:
@@ -15,7 +21,7 @@ in the command line, then enter
     GenerateMonthlyPayslip "<name>" <annualsalary>
 
 
-## Assumptions:
+### Assumptions:
 
 * We're only working with whole dollars, so there won't be any incomes of for example $20,000.50 (as it's not clear which bracket this would fall into)
 * Nobody will ever earn more than the decimal.MaxValue 79228162514264337593543950334. I could have used 0, but this seemed cleaner
